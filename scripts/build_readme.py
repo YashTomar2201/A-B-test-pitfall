@@ -74,7 +74,7 @@ readme = f"""# A/B Pitfall Lab
 
 📓 [Notebooks](notebooks/) · 📄 [Methodology](reports/methodology.md) · 📝 [Decision log](reports/decision_log.md) · 📋 [PM playbook](reports/experimentation_playbook.md) · 🧾 [Experiment audit](reports/experiment_audit.md) · 📋 [Project charter](reports/project_charter.md)
 
-> **Live app:** _add the Streamlit Community Cloud link here after deploying (`app/Home.py`). The first visit after idle can take ~30 s to wake._
+> **🚀 Live app:** https://a-b-test-pitfall-lab.streamlit.app/ _(free tier: the first visit after idle can take ~30 s to wake)_
 
 ---
 
@@ -243,7 +243,7 @@ Path("reports/experiment_audit.md").write_text(audit_md, encoding="utf-8")
 # ------------------------------------------------------------------ resume bullets
 bullets = f"""# Resume bullets (numbers read from the results)
 
-**A/B Pitfall Lab** | Python, SQL (DuckDB), statsmodels, Streamlit · [Live app] · [GitHub]
+**A/B Pitfall Lab** | Python, SQL (DuckDB), statsmodels, Streamlit · [Live app](https://a-b-test-pitfall-lab.streamlit.app/) · [GitHub](https://github.com/YashTomar2201/A-B-test-pitfall)
 
 - Built an experimentation simulation lab quantifying **9 common A/B-testing pitfalls** across 100K+ Monte Carlo simulations; showed daily peeking inflates false positives from **5% to {pct(fpr14)}** and implemented O'Brien-Fleming and mSPRT sequential tests that restore validity (mSPRT at a cost of ~{msp_mult:.1f}x sample).
 - Validated methods on **real randomized data (Criteo, {c['rows'] / 1e6:.1f}M rows; Hillstrom)** with SQL (DuckDB) and Python cross-checked to the last digit; real-data A/A tests gave {pct(c['real_aa']['visit']['false_positive_rate'])} false positives; found that covariate adjustment cut required sample by **{pct(1 - anc_v['sample_needed_ratio'], 0)}** on Criteo visits and flagged a covariate imbalance between Criteo's arms that shifts the effect estimate.

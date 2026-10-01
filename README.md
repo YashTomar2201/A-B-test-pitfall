@@ -4,7 +4,7 @@
 
 📓 [Notebooks](notebooks/) · 📄 [Methodology](reports/methodology.md) · 📝 [Decision log](reports/decision_log.md) · 📋 [PM playbook](reports/experimentation_playbook.md) · 🧾 [Experiment audit](reports/experiment_audit.md) · 📋 [Project charter](reports/project_charter.md)
 
-> **Live app:** _add the Streamlit Community Cloud link here after deploying (`app/Home.py`). The first visit after idle can take ~30 s to wake._
+> **🚀 Live app:** https://a-b-test-pitfall-lab.streamlit.app/ _(free tier: the first visit after idle can take ~30 s to wake)_
 
 ---
 
