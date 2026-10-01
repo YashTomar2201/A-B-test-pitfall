@@ -1,0 +1,51 @@
+{
+  "n_quarters": 500,
+  "experiments_per_quarter": 40,
+  "break_even_false_win_cost_inr": -348917.6581883845,
+  "sens_false_win_cost": [
+    {
+      "false_win_cost_inr": 0,
+      "naive_total_cost_median": 14400000.0,
+      "rigorous_total_cost_median": 9467077.846191844
+    },
+    {
+      "false_win_cost_inr": 500000,
+      "naive_total_cost_median": 18196221.177583553,
+      "rigorous_total_cost_median": 10253304.326735834
+    },
+    {
+      "false_win_cost_inr": 2000000,
+      "naive_total_cost_median": 33200000.0,
+      "rigorous_total_cost_median": 14241699.248864463
+    },
+    {
+      "false_win_cost_inr": 5000000,
+      "naive_total_cost_median": 60925769.06055153,
+      "rigorous_total_cost_median": 21000000.0
+    }
+  ],
+  "worst_case_rerun_equals_abandon": {
+    "naive_total_cost_median": 18196221.177583553,
+    "rigorous_total_cost_median": 27827631.825610388
+  },
+  "sens_true_win_share": [
+    {
+      "true_win_share": 0.15,
+      "naive_fdr_median": 0.5555555555555556,
+      "rigorous_fdr_median": 0.25,
+      "naive_false_wins_median": 10.0,
+      "rigorous_false_wins_median": 2.0,
+      "naive_total_cost_median": 19400000.0,
+      "rigorous_total_cost_median": 8550000.0
+    },
+    {
+      "true_win_share": 0.35,
+      "naive_fdr_median": 0.35,
+      "rigorous_fdr_median": 0.125,
+      "naive_false_wins_median": 8.0,
+      "rigorous_false_wins_median": 2.0,
+      "naive_total_cost_median": 18400000.0,
+      "rigorous_total_cost_median": 15147154.79445234
+    }
+  ]
+}

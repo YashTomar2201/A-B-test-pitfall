@@ -1,0 +1,44 @@
+# Scenario mix for the experiment audit (Phase 7). One "quarter" = n_experiments tests.
+# Shares are ASSUMPTIONS (see reports/decision_log.md); the audit is re-run with 15% and 35%
+# true wins as a sensitivity check.
+n_experiments: 40
+planned_mde_rel: 0.10          # the analyst's pre-registered minimum detectable effect
+defaults:
+  days: 14
+  users_per_day: 6000
+  base_cr: 0.05
+  lift: 0.0
+scenarios:
+  true_win:
+    share: 0.25
+    lift: [0.08, 0.16]          # uniform draw; long-run relative lift on conversion
+  true_null:
+    share: 0.40
+    lift: 0.0
+  small_win_underpowered:
+    share: 0.10
+    lift: 0.04
+    users_per_day: 1500
+  novelty_only:
+    share: 0.10
+    lift: 0.0
+    novelty_boost: 0.30
+    novelty_halflife: 3.0
+  srm_bug:
+    share: 0.10
+    lift: 0.0
+    srm_drop_rate: 0.04
+  noisy_revenue:
+    share: 0.05
+    lift: 0.0
+    whale_rate: 0.005
+
+# Illustrative economics (assumptions, not measurements)
+economics:
+  monthly_active_users: 2000000
+  baseline_conversion: 0.05
+  avg_order_value_inr: 1000
+  contribution_margin: 0.10
+  engineering_cost_per_shipped_change_inr: 500000
+  rerun_delay_months: 3            # a flagged-for-rerun true win ships ~1 quarter later
+  months_lost_if_abandoned: 12     # a true win the team abandons loses a year of its margin

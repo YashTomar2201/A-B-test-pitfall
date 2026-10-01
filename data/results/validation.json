@@ -1,0 +1,95 @@
+{
+  "aa": {
+    "runs": 2000,
+    "false_positive_rate": 0.047,
+    "ks_uniform_p": 0.07527861363498312
+  },
+  "known_effect": [
+    {
+      "true_rel_lift": 0.0,
+      "true_abs_effect": 0.0,
+      "mean_estimate": -9.040133830508501e-05,
+      "ci_coverage": 0.954
+    },
+    {
+      "true_rel_lift": 0.05,
+      "true_abs_effect": 0.0025000000000000005,
+      "mean_estimate": 0.0023959723615538564,
+      "ci_coverage": 0.947
+    },
+    {
+      "true_rel_lift": 0.1,
+      "true_abs_effect": 0.005000000000000001,
+      "mean_estimate": 0.004884861051684853,
+      "ci_coverage": 0.953
+    },
+    {
+      "true_rel_lift": 0.2,
+      "true_abs_effect": 0.010000000000000002,
+      "mean_estimate": 0.009899852371849082,
+      "ci_coverage": 0.951
+    }
+  ],
+  "cuped_sim": {
+    "aa_fpr_raw": 0.04666666666666667,
+    "aa_fpr_cuped": 0.043333333333333335,
+    "power_raw": 0.18833333333333332,
+    "power_cuped": 0.18333333333333332,
+    "note": "revenue is sparse (5% convert), so the pre-period covariate helps only modestly"
+  },
+  "cuped_rho": [
+    {
+      "rho": 0.0,
+      "measured_reduction": 6.679886297433768e-06,
+      "theory_rho2": 0.0
+    },
+    {
+      "rho": 0.2,
+      "measured_reduction": 0.04038057598531486,
+      "theory_rho2": 0.04000000000000001
+    },
+    {
+      "rho": 0.4,
+      "measured_reduction": 0.16084712914574673,
+      "theory_rho2": 0.16000000000000003
+    },
+    {
+      "rho": 0.6,
+      "measured_reduction": 0.35874254025581687,
+      "theory_rho2": 0.36
+    },
+    {
+      "rho": 0.8,
+      "measured_reduction": 0.6397135329536752,
+      "theory_rho2": 0.6400000000000001
+    },
+    {
+      "rho": 0.9,
+      "measured_reduction": 0.8110502790236178,
+      "theory_rho2": 0.81
+    }
+  ],
+  "cuped_days_example": {
+    "variance_reduction": 0.3,
+    "sample_ratio": 0.7
+  },
+  "checker_report_card": {
+    "runs_per_scenario": 300,
+    "detection_rate": {
+      "Sample ratio": 1.0,
+      "Novelty": 0.57,
+      "Power": 1.0,
+      "Outliers": 0.6833333333333333,
+      "Balance": 1.0
+    },
+    "false_alarm_rate_on_clean_tests": {
+      "Sample ratio": 0.0,
+      "Novelty": 0.013333333333333334,
+      "Power": 0.0,
+      "Outliers": 0.0,
+      "Balance": 0.0
+    },
+    "clean_win_ship_rate": 0.9866666666666667,
+    "clean_null_ship_rate": 0.04
+  }
+}

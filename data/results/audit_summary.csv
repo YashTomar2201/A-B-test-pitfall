@@ -1,0 +1,3 @@
+analyst,shipped_median,false_wins_median,fdr_median,true_wins_shipped_median,true_wins_missed_median,avg_reported_lift,avg_true_lift,cost_false_inr_median,cost_missed_inr_median,total_cost_inr_median
+naive,21.0,9.0,0.4583333333333333,11.0,3.0,0.20873789095527526,0.06020920907633572,4500000.0,14400000.0,18196221.177583553
+rigorous,11.0,2.0,0.16666666666666666,9.0,4.0,0.12089352762051718,0.10062913238802265,1000000.0,9467077.846191844,10253304.326735834
